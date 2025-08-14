@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+
+    <style>
+        /* This is CSS comment */
+        /* Internal Style */
+
+        #para1, #para2{
+            color:pink;
+        }
+
+        p{
+            color:greenyellow;
+            background-color: honeydew;
+        }
+
+        .yell{ /* . is class */
+            color:yellow;
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 style="color:red;background-color: lightcoral;width: 50%;">My Lovely Form</h1> <!-- inline CSS -->
+
+    <p id="para1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, magnam nostrum earum natus ipsam hic magni animi, nemo quidem eius tenetur eos. Maxime dolorum veniam tempora est fuga incidunt recusandae!
+    </p>
+    <p class="yell">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iure esse aspernatur nobis saepe? Quaerat saepe similique laudantium accusamus nesciunt reprehenderit consectetur necessitatibus sed consequatur, nostrum recusandae asperiores totam ad.
+    </p>
+    <p id="para2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eligendi velit dolore voluptates, praesentium pariatur expedita magnam veritatis, tempora ipsam, totam repellat omnis. Incidunt est excepturi facilis itaque dolorem dignissimos.
+    </p>
+
+
+    <h2 style="color:black">heading 2 num 1</h2>
+    <h2>heading 2 num 2</h2>
+    <h2>heading 2 num 3</h2>
+
+    <form action="">
+        <input class="yell" type="text" name="fullname" id="name" placeholder="hello"/><br>
+        <input type="text" name="stam" id="stam"/><br>
+        <input type="text" name="stam2" id="stam2"/><br>
+        Send me junk: <input type="checkbox" name="junk" id="junk" value="y"><br>
+        
+        <select name="status" id="status" required>
+            <option value="" disabled selected>Marital Status:</option>
+            <option>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+            <option>Widowed</option>
+            <option>It's private</option>
+        </select><br>
+        <input type="submit" value="Send me">
+    </form>
+</body>
+</html>

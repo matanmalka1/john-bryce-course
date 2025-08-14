@@ -1,0 +1,75 @@
+body {
+  background: rgb(127, 255, 251);
+  direction: rtl;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding: 20px;
+  font-size: 29pt;
+  margin: 0 0 8px;
+}
+
+.links_head_page {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  font-size: 15pt;
+  margin: 6px 0 22px;
+}
+
+#p1 {
+  line-height: 2.5;
+  font-size: 18px;
+}
+img {
+  display: block;
+  width: 420px;
+  max-width: 90vw;
+  height: auto;
+  margin: 12px auto 18px;
+  border-radius: 3px;
+}
+.copyright-icon {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+footer {
+  text-align: center;
+}
+.photo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.photo img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+
+.contact-title {
+  max-width: 760px;
+  margin: 0 auto 10px;
+  padding-right: 8px;
+  font-size: 20pt;
+  font-weight: 700;
+}
+
+#header3 {
+  font-size: 22pt;
+}
+.gender-container {
+  display: flex;
+  justify-content: right;
+  font-family: Arial, sans-serif;
+}
+.city-container {
+  display: flex;
+  justify-content: right;
+}

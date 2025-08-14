@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Webpage</title>
+  </head>
+
+  <body>
+    <h1>🎉 Welcome to my first webpage! 🎉</h1>
+    <h2>Text:</h2>
+    <p id="top">
+      Second line here? kjdnbv kjfdnvkjfdnv kjf nvkjf nfdvnfnkvnckjkcxv dkj
+      nkjdn kjdn vkjfd nvkjfdx nvkjd xnvcxjnv cxkjvnk jdnv vb jhfd bvjhfd bvjhfd
+      fkjd hgfkd nvfkjnv kjfvkjfdn kjfdn cxnv,cmxnv ,mcvn ,mcxnv cxknv fdnv fdn
+      vfdnv kjds hisf iuesf d fdnf dknfdknfkdjnf kdj nfkjd nkjdfnksjn fn kjfnv
+      kjfnvfkjnvkjfd nv dkj nkjdn kjdn vkjfd nvkjfdx nvkjd xnvcxjnv cxkjvnk jdnv
+      vb jhfd bvjhfd bvjhfd fkjd hgfkd nvfkjnv kjfvkjfdn kjfdn cxnv,cmxnv ,mcvn
+      ,mcxnv cxknv fdnv fdn vfdnv kjds hisf iuesf d fdnf dknfdknfkdjnf kdj nfkjd
+      nkjdfnksjn fn kjfnv kjfnvfkjnvkjfd nv last
+    </p>
+    <p>Another paragraph</p>
+    <a href="#images">To images</a>
+
+    <hr width="90%" />
+
+    <h2>Lists:</h2>
+    <h3>Ordered List</h3>
+    <ol>
+      <!-- numbered list -->
+      <li>Milk</li>
+      <!-- list item -->
+      <li>Eggs</li>
+      <li>Bread</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+      <li>Blah</li>
+      <li>Yada</li>
+    </ul>
+
+    <h3>Nested Lists</h3>
+    <ul>
+      <li>Eggs</li>
+      <li>Meat</li>
+      <ul>
+        <li>Chicken Wings</li>
+        <li>500 gram Fillet</li>
+      </ul>
+    </ul>
+
+    <hr width="90%" />
+
+    <h2>Tables</h2>
+    <table border="1">
+      <!-- this is a table that shows blah blah blah. Don't forget to check the text -->
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <!-- row -->
+        <td>ONE</td>
+        <!-- cell -->
+        <td>TWO</td>
+        <td>THREE</td>
+      </tr>
+      <tr>
+        <!-- second row -->
+        <td>FOUR</td>
+        <td>FIVE</td>
+        <td>SIX</td>
+      </tr>
+      <tr>
+        <td>Ofek</td>
+        <td>Shahak</td>
+        <td>Tamar</td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <table border="1">
+      <tr>
+        <th colspan="3">STUDENTS</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Telephone</th>
+      </tr>
+      <tr>
+        <td>Nir Gal</td>
+        <td>nirg@jbh.co.il</td>
+        <td rowspan="2">0501122334</td>
+      </tr>
+      <tr>
+        <td>Matan</td>
+        <td>matan@jbh.co.il</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h3>Links:</h3>
+    <a href="https://www.google.com">Click me for Google</a><br />
+    <a
+      target="_blank"
+      href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy85NzM1ZmYxMWFiMzYwZDgwL0Vr
+    U0VGbFc3NXVCSm9IRlptUFN0R1U0QlprbkY5WUR1eU9sVUdXbkZUU2szMmc%5FZT1OSXMwYUJodHRwczovLzFkcnYubXMvZ
+    i9jLzk3MzVmZjExYWIzNjBkODAvRWtTRUZsVzc1dUJKb0hGWm1QU3RHVTRCWmtuRjlZRHV5T2xVR1duRlRTazMyZz9lPU5J
+    czBhQg&id=9735FF11AB360D80%21s55168444e6bb49e0a0715998f4ad194e&cid=9735FF11AB360D80"
+    >
+      Click me for our OneDrive folder in a new tab!</a
+    ><br />
+    <a href="page2/page2.html">Page 2</a><br />
+
+    <hr />
+    <h3 id="images">Images:</h3>
+    <a href="https://en.wikipedia.org/wiki/Monkey" target="_blank">
+      <img src="images/monkey.webp" alt="A photo of my Monkey" width="50%" />
+    </a>
+
+    <a href="https://www.puppies.com">
+      <img src="images/puppies.avif" alt="A photo of cute puppies" />
+    </a>
+
+    <br />
+    <a href="#top">Back to top!</a>
+
+    <hr />
+
+    <h3>Forms:</h3>
+    <form>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        required
+        placeholder="Enter  your full name"
+      />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="0"
+        max="100"
+        step="0.5"
+        required
+        placeholder="Enter your age"
+      />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Enter your email"
+      /><br />
+      Hobbies: <br />
+      <input type="checkbox" /> Surfing <input type="checkbox" /> Dancing
+      <input type="checkbox" /> Gaming <input type="checkbox" /> Driving
+      <br />
+      Gender:
+      <input type="radio" name="gender" id="gender" />Female
+      <input type="radio" name="gender" id="gender" />Male
+      <br />
+      City:
+      <select name="city" id="city">
+        <option value="TA">Tel Aviv</option>
+        <option value="LA">Los Angeles</option>
+        <option value="TYO">Tokyo</option>
+      </select>
+      <br />
+      Comments: <br />
+      <textarea
+        name="comments"
+        id="comments"
+        cols="50"
+        rows="10"
+        placeholder="Send us your feedback"
+      ></textarea>
+      <input type="range" min="0" max="100" />
+      <br /><br />
+      <input type="submit" value="Send the form" />
+    </form>
+
+    <br /><br /><br />
+  </body>
+</html>

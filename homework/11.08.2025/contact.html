@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1>חנות החיות המגניבה בארץ!</h1>
+
+    <div class="links_head_page">
+      <a href="home_page.html" target="_blank">דף הבית</a>
+      <a href="animals.html" target="_blank">חיות</a>
+      <a href="contact.html" target="_blank">צור קשר</a>
+    </div>
+
+    <h2 class="contact-title">צור קשר:</h1>
+
+   <form class="contact-form">
+      <label for="first">שם פרטי:</label>
+      <input 
+        type="text"
+        id="first"
+        name="first"
+        placeholder=" הזן את שמך הפרטי"
+      /><br />
+
+   <label for="last">שם משפחה:</label>
+      <input
+        type="text"
+        id="last"
+        name="last"
+        placeholder=" הזן את שם משפחתך "
+      /><br />
+
+<label>מין:</label>
+      <div class="gender-container">
+  <div class="options">
+    <label>
+      <input type="radio" name="gender" value="male">
+      זכר
+    </label><br>
+    <label>
+      <input type="radio" name="gender" value="female">
+      נקבה
+    </label>
+  </div>
+</div>
+
+<div class="city-container">
+  <label>עיר:</label>
+  <select name="city" id="city" >
+    <option disabled selected>בחר עיר...</option>
+    <option value="תל אביב">תל אביב</option>
+    <option value="בת ים">בת ים</option>
+    <option value="רחובות">רחובות</option>
+  </select>
+</div>
+
+<div class="free-text-container"></div>
+<label>הודעה:</label>
+  <textarea rows="5" cols="40" placeholder="הזן כאן כל הודעה שבאלך"></textarea>
+  </div>
+
+   <div class="actions">
+  <input type="button" value="שלח">
+  <input type="reset" value="נקה">
+</div>
+
+    </form>
+
+    <footer>© כל הזכויות שמורות</footer>
+
+  </body>
+</html>

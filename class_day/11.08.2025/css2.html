@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2</title>
+    <style>
+
+        body{
+            font-size: 8pt;
+        }
+        
+        h1{
+            font-size: 3em;
+            text-align: center;
+            width: 50%;
+            direction: rtl;
+        }
+
+        p{
+            /* 0, 1, ...9, A, B, C, D, E, F, 10 */
+            color:rgb(179, 82, 82);
+
+            /* font */
+/*             
+            font-family: 'Roboto', 'algerian', 'arial';
+            font-size: 2em;  units: mm, cm, in, px, pt; em 
+            font-style: italic;
+            font-weight: bold; */
+
+            
+            font: bold 2em 'Arial';
+            line-height: 30px;
+
+            /* text */
+            text-decoration: underline; /* underline, overline, line-through */
+            text-decoration-color: yellow;
+            
+            text-align:left;
+        }
+
+        .heb{
+            text-decoration: none;
+            text-align: right;
+            direction: rtl;
+        }
+
+        .second{
+            color: red;
+            
+            /* border-style: solid;
+            border-color: green;
+            border-width: 10px; */
+            border: solid green 10px;
+            border-radius: 20px;
+            border-top: double red 5px;
+
+            padding: 50px; /* ריווח מהתוכן לגבול */
+            margin: 20px; /* ריווח בין הגבול לאלמנט הבא */
+        }
+
+        a{
+            font-size: 20pt;
+            background-color: lightsalmon;
+            /* border: solid black 2px; */
+            /* padding: 20px; */
+            margin: 500px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a:hover{
+            font-size: 3em;
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+
+        a:active{
+            color: maroon;
+            font-size: 1.5em;
+        }
+
+        a:visited{
+            color: hotpink;
+            text-decoration: line-through; /* check */
+            text-decoration-color: black;
+        }
+
+        p:hover{
+            color: indigo;
+            border: solid black 1px;
+        }
+
+        #gallery>img{
+            width: 48%;     
+        }
+
+        img{}
+
+        #gallery{
+            border: solid black 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore autem nemo, incidunt reiciendis voluptates voluptate repudiandae id porro debitis dicta facere! Illum fugiat commodi earum cumque, quis iure quasi saepe.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni aspernatur enim distinctio! Natus, quo. Aut similique voluptatem atque quam ducimus facere error at. Laboriosam fuga laudantium iusto rerum eius tempore.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sed doloribus voluptatibus. Quisquam obcaecati iure adipisci placeat ullam earum totam corporis repellat quod, enim distinctio sequi dolorum sapiente voluptas blanditiis.</p>
+    
+    <p class="heb second">
+        פסקה בעברית. בלה בלה בלה חכגמ כלחגמ נהלחכג מנהלחכ מנלחכג הגלכ הכגןה חמכ מהלכחמ לחכמ נהלחכב מנלחהבמ נלחהבנ מלחכמ לחכגמ לחכג מהלחכגמה לחכגמה לחכמה לחכגמה לחכגמה כלחגמה לחכגמה לחכגמה כלחגמכגלח מהכלחגמ 
+        ךלכג חהלחכגה לחכמה לחכמה לחכמ הלחכגמ הלחכ מהתבסמה לחמלגדלחגד כלחגדכמ לחגמכ לחגמכ לחגד מכלחגדמכ לגחד מכלחג מכלגחד מכלחגדמ כלחגד מכלחגדמ כלגחדמכ לחגמ לחמה לכגחמה לכגחמה כלחגמ הלחכגמהלחכג מהכלחמה לחכגמה לחכגמה לחכג מהלכחגמה כלחגמה לחכגמה לחכגמהחידג נכחיגדנ חיגד נבחיגדנב
+        חגדל לחג מחכגמנה חכיג מנהחיכג גדב לגחמב לחגמב לחגמב לחגמב לחג מב.
+    </p>
+    <ul class="heb">
+        <li>אחת</li>
+        <li>שניים</li>
+    </ul>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.youtube.co">Youtube</a>
+    
+    <div id="gallery">
+        <img src="https://aquitainevet.com/wp-content/uploads/2018/06/aquitaine-kittens.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSbgTSeYYRAAAeOP1iNFE-ZuMgs8B4WtDFQ&s" alt="">
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSbgTSeYYRAAAeOP1iNFE-ZuMgs8B4WtDFQ&s" alt="">
+</body>
+</html>

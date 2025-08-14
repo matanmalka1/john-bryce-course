@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web worker</title>
+  </head>
+  <body>
+    <input onclick="a()" type="button" value="button" />
+    <script>
+      function a() {
+        let w = new Worker("w1.js");
+        w.onmessage = function (x) {
+          alert(x.data);
+        };
+        w.postMessage("hello");
+      }
+    </script>
+  </body>
+</html>
