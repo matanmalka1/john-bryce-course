@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      #container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 10% 90%;
+        gap: 20px 10px; /* rows cols */
+      }
+
+      #container > * {
+        border: solid black 1px;
+      }
+
+      #header {
+        grid-column: span 2; /* 1/3; */
+        text-align: center;
+      }
+
+      #marker {
+        color: red;
+      }
+
+      #links > a {
+        display: block;
+        margin: 20px;
+        padding: 20px;
+        background-color: burlywood;
+        text-align: center;
+        transition: 2s;
+      }
+      #links > a:hover {
+        font-size: 2em;
+        background-color: red;
+        max-height: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>My Heading!</h1>
+      </div>
+      <div id="links">
+        <a href="http://www.google.com">One</a>
+        <a href="http://www.google.com">Two</a>
+        <a href="http://www.google.com">Three</a>
+      </div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <span id="marker">Molestias autem</span> vero voluptatem deserunt ipsa
+          reprehenderit ad quas dignissimos repudiandae? Repellat nesciunt
+          voluptatum nisi ut delectus in! Dolorem saepe explicabo temporibus.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          nihil, exercitationem aliquid natus nostrum laborum explicabo atque
+          sit quo expedita accusamus repellat voluptatibus ut porro voluptas
+          veritatis aspernatur quis doloremque.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
