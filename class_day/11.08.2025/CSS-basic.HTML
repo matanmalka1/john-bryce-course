@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Exercise 1</title>
+    <style>
+      /* Your CSS here */
+      h1 {
+        color: darkblue;
+        font-weight: bold;
+        font-style: italic;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+      .box {
+        border: 2px dashed black;
+        border-color: red;
+
+        width: 200px;
+        height: 100px;
+      }
+      .container {
+        background-color: lightgray;
+        padding: 20px;
+        margin: 30px;
+        border: solid 1px black;
+      }
+      .card {
+        width: 300px;
+        height: 200px;
+        background-color: lightyellow;
+        border: 3px solid darkgreen;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 20px;
+      }
+      h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: darkgreen;
+        text-align: center;
+      }
+
+      .bg-box {
+        background-color: lightblue;
+        background-image: url("bitcoin.jpeg");
+        height: 200px;
+        width: 400px;
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: yellow;
+      }
+
+      .bg-box:hover {
+        background: linear-gradient(to right, yellow, orange);
+      }
+      .heading {
+        text-align: center;
+      }
+      .text {
+        text-align: justify;
+        text-decoration: underline;
+        max-width: 380px;
+        margin: 10px auto;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .flex-container .flex-item {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+      }
+      .grid-container .grid-item {
+        background-color: lightgreen;
+        border: 2px solid black;
+        text-align: center;
+        height: 80px;
+        grid-template-columns: 1fr 1fr;
+      }
+      #sp {
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to CSS Practice</h1>
+    <p>This is a paragraph to style.</p>
+    <div class="box">This is a box</div>
+    <div class="container">
+      <p>This paragraph is inside a container.</p>
+    </div>
+
+    <div class="card">
+      <h2>Card Title</h2>
+      <p>This is some description text inside the card.</p>
+    </div>
+
+    <div class="bg-box">
+      <p>This box has a styled background.</p>
+    </div>
+
+    <h1 class="heading">My Heading</h1>
+    <p class="text">This is a sample text for styling.</p>
+
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <div class="grid-container">
+      <div id="sp" class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+  </body>
+</html>

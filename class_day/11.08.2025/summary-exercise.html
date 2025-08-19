@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0%;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(48, 61, 78);
+        padding: 10px 12px;
+        position: relative;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+
+      .btn {
+        text-decoration: none;
+        padding: 4px 8px;
+        margin: 6px;
+        font-weight: bold;
+        color: whitesmoke;
+        display: inline-block;
+      }
+
+      .container1 {
+        padding: 40px;
+        background-color: rgb(53, 79, 104);
+      }
+
+      .header {
+        text-align: center;
+        color: gray;
+        margin: 0%;
+        flex: 0 0 100%;
+        text-align: center;
+        margin: 16px 0;
+      }
+      .para1 {
+        text-align: justify;
+        width: 50%;
+        margin: 20px auto;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+      }
+      .btn1 {
+        border-radius: 6px;
+        background-color: whitesmoke;
+        padding: 5px;
+        width: 100px;
+        height: 35px;
+      }
+      #btn-color1 {
+        background-color: lightblue;
+      }
+      .container2 {
+        background-color: white;
+        padding: 20px;
+      }
+      .about {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        width: 70%;
+        margin: 0 auto;
+        gap: 20px;
+      }
+      .profile-pic {
+        width: 200px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .container3 {
+        background-color: rgb(234, 239, 229);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .skill-card {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 200px;
+        text-align: center;
+      }
+      .skill-card .icon {
+        font-size: 2.5em;
+      }
+      .progress {
+        background: whitesmoke;
+        height: 8px;
+      }
+      .bar {
+        height: 100%;
+        background: linear-gradient(to right, blue, white);
+        border-radius: 4px;
+      }
+      .container4 {
+        background-color: rgb(215, 217, 213);
+        display: flex;
+        padding: 40px 20px;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .project-card {
+        width: 280px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        border-radius: 18px;
+        padding: 20px;
+      }
+      .project-top {
+        background-color: rgb(215, 217, 213);
+        border-radius: 12px;
+        height: 120px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(
+          135deg,
+          rgb(43, 108, 176),
+          rgb(44, 82, 130)
+        );
+        color: white;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+      }
+
+      .project-content {
+        background-color: white;
+        border-radius: 12px;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+      .technologies span {
+        background-color: #e2e8f0;
+        color: #4a5568;
+        padding: 4px 10px;
+        border-radius: 9999px; /* ליצירת צורה של כפתור */
+        font-size: 0.75em;
+        font-weight: 600;
+      }
+      .view-project-button {
+        display: block;
+        text-align: center;
+        padding: 12px;
+        background-color: transparent;
+        color: #2b6cb0;
+        border: 2px solid #2b6cb0;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>
+        <a href="#about">Matan Yehuda Malka</a>
+      </div>
+
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container1">
+      <h1 id="full-stack" class="header" style="color: white">
+        Full Stack Developer
+      </h1>
+      <p class="para1">
+        What I Know I am learning and practicing full-stack development,
+        including HTML, CSS, JavaScript, and Python. I have experience building
+        small projects, designing responsive layouts, and working with basic
+        databases. I am eager to expand my knowledge and apply it to real-world
+        applications.
+      </p>
+      <div class="buttons">
+        <button class="btn1" id="btn-color" type="button">View My Work</button>
+        <button class="btn1" id="btn-color1" type="button">Get In Touch</button>
+      </div>
+    </div>
+
+    <div class="container2">
+      <h2 id="about" class="header">About Me</h2>
+      <div class="about">
+        <img
+          src="../11.08.2025/images/OM-4121.jpg"
+          alt="My Photo"
+          class="profile-pic"
+        />
+        <p class="para1">
+          About Me I am a passionate and motivated full-stack developer in
+          training, with a strong curiosity for technology and problem
+          solving.<br /><br />
+          My journey into the world of software development began with a desire
+          to understand how applications are built and how technology can make
+          people’s lives easier. <br /><br />
+          I enjoy learning new programming languages, frameworks, and tools, and
+          I constantly challenge myself with personal projects to put my
+          knowledge into practice.<br /><br />
+          Beyond the technical side, I believe in creativity, teamwork, and
+          communication as the foundation for building meaningful applications.
+          My long-term goal is to grow into a professional developer who
+          combines technical expertise with innovative thinking to deliver
+          user-friendly, reliable, and impactful solutions.
+        </p>
+      </div>
+    </div>
+
+    <div class="container3">
+      <h2 class="header">My Skills</h2>
+      <div class="skill-card">
+        <div class="icon">💻</div>
+        <h3 class="header">Frontend Development</h3>
+        <p>HTML, CSS, JavaScript</p>
+        <div class="progress">
+          <div class="bar" style="width: 80%"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="icon">💻</div>
+        <h3 class="header">Backend Development</h3>
+        <p>Python</p>
+        <div class="progress"><div class="bar" style="width: 70%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="icon">💻</div>
+        <h3 class="header">Database Management</h3>
+        <p>MySQL, SQLalechemy</p>
+        <div class="progress">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container4">
+      <h2 class="header">Featured Projects</h2>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span>project1</span>
+        </div>
+
+        <div class="project-content">
+          <h3>User Management System</h3>
+          <p>
+            User Management System based on Flask and SQLite using SQLAlchemy.
+            The system allows creating, updating, deleting, and searching for
+            users by ID, email, or username – through a simple and efficient API
+            interface.
+          </p>
+          <div class="technologies">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <a href="#" class="view-project-button">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-top">
+          <span>project1</span>
+        </div>
+
+        <div class="project-content">
+          <h3>User Management System</h3>
+          <p>
+            User Management System based on Flask and SQLite using SQLAlchemy.
+            The system allows creating, updating, deleting, and searching for
+            users by ID, email, or username – through a simple and efficient API
+            interface.
+          </p>
+          <div class="technologies">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <a href="#" class="view-project-button">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-top">
+          <span>project1</span>
+        </div>
+
+        <div class="project-content">
+          <h3>User Management System</h3>
+          <p>
+            User Management System based on Flask and SQLite using SQLAlchemy.
+            The system allows creating, updating, deleting, and searching for
+            users by ID, email, or username – through a simple and efficient API
+            interface.
+          </p>
+          <div class="technologies">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <a href="#" class="view-project-button">View Project</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
