@@ -120,7 +120,7 @@
         flex-wrap: wrap;
       }
       .project-card {
-        width: 280px;
+        width: 200px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
@@ -181,6 +181,19 @@
         text-decoration: none;
         font-weight: bold;
         transition: all 0.3s ease;
+      }
+
+      .contact-item {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .footer {
+        color: rgb(206, 210, 215);
+        text-align: center;
+        padding: 14px;
       }
     </style>
   </head>
@@ -263,7 +276,7 @@
       <div class="skill-card">
         <div class="icon">💻</div>
         <h3 class="header">Database Management</h3>
-        <p>MySQL, SQLalechemy</p>
+        <p>MySQL, SQLalchemy</p>
         <div class="progress">
           <div class="bar" style="width: 60%"></div>
         </div>
@@ -287,9 +300,9 @@
             interface.
           </p>
           <div class="technologies">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
+            <span>SQLite</span>
+            <span>SQLAlchemy</span>
+            <span>Python</span>
           </div>
           <a href="#" class="view-project-button">View Project</a>
         </div>
@@ -300,17 +313,18 @@
         </div>
 
         <div class="project-content">
-          <h3>User Management System</h3>
+          <h3>Interactive data management system</h3>
           <p>
-            User Management System based on Flask and SQLite using SQLAlchemy.
-            The system allows creating, updating, deleting, and searching for
-            users by ID, email, or username – through a simple and efficient API
-            interface.
+            We built a project using Python with libraries such as pandas for
+            data analysis, requests for API integration, and matplotlib for
+            visualizations. We also used SQLite for database management and
+            Flask to create a simple web interface, delivering a complete
+            solution from data collection to user-friendly presentation.
           </p>
           <div class="technologies">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Flask</span>
           </div>
           <a href="#" class="view-project-button">View Project</a>
         </div>
@@ -337,5 +351,29 @@
         </div>
       </div>
     </div>
+    <div id="contact" class="contact block">
+      <div class="container">
+        <h2 style="text-align: center; color: #475569">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            📨
+            <span
+              >Email:
+              <a href="mailto:Matan1597@gmail.com">Matan1597@gmail.com</a></span
+            >
+          </div>
+          <div class="contact-item">
+            📱
+            <span>Phone: <a href="tel:+972000000000">+972-00-000-0000</a></span>
+          </div>
+          <div class="contact-item">
+            📍 <span>Location: Bat Yam, Israel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">© 2025 Matan Yehuda Malka. All rights reserved.</div>
   </body>
 </html>

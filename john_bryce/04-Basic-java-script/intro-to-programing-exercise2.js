@@ -118,3 +118,5 @@ if (num > 0) {
 } else {
   document.getElementById("output").innerHTML += `The number is negative<br>`;
 }
+let height = prompt("Enter your room height")
+let lenght
