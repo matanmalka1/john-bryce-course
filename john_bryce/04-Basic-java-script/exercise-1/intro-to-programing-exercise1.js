@@ -37,7 +37,7 @@ document.getElementById(
   "output"
 ).innerHTML += `Your girlfriend is ${gFriend} <br>`;
 
-//let bFriend = prompt(`Enter your boyfriend name:`);
+let bFriend = prompt(`Enter your boyfriend name:`);
 document.getElementById(
   "output"
 ).innerHTML += `your boyfriend is ${bFriend} again ${bFriend} and again ${bFriend} <br>`;
